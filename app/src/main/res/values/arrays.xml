@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cities_array">
+        <item>City A</item>
+        <item>City B</item>
+        <item>City C</item>
+        <item>City D</item>
+        <item>City E</item>
+    </string-array>
+
+    <string-array name="sickle_cell_types_array">
+        <item>SS</item>
+        <item>SC</item>
+        <item>Sβ-thalassemia</item>
+        <item>SE</item>
+        <item>SD</item>
+    </string-array>
+    <string-array name="appointment_types" />
+
+</resources>

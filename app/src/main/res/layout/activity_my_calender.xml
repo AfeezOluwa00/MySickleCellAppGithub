@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Date TextInput -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:onClick="showDatePicker"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Appointment Time Dropdown -->
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/dropdownAppointmentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextDate"
+        android:layout_marginTop="16dp"
+        android:hint="Select Appointment Time"/>
+
+    <!-- Appointment Type Dropdown -->
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/dropdownAppointmentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dropdownAppointmentTime"
+        android:layout_marginTop="16dp"
+        android:hint="Select Appointment Type"/>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dropdownAppointmentType"
+        android:layout_marginTop="24dp"
+        android:text="Save"
+        android:onClick="saveAppointment"/>
+
+</RelativeLayout>
