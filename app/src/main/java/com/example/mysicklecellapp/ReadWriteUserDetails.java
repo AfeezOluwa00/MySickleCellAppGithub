@@ -1,4 +1,4 @@
-package com.example.travelplannerca3;
+package com.example.mysicklecellapp;
 
 // ReadWriteUserDetails.java
 public class ReadWriteUserDetails {
